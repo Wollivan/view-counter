@@ -1,4 +1,5 @@
 import kv from "@vercel/kv";
+import Link from "next/link";
 
 export default async function Home() {
   // see how many people love us on GitHub
@@ -18,7 +19,9 @@ export default async function Home() {
   return (
     <main>
       <p style={myStyles.p}>{pageViews}</p>
-      <span>⭐ {data.stargazers_count}</span>
+      <Link href="https://github.com/Wollivan/view-counter" target="_blank">
+        <span>⭐ {data.stargazers_count}</span>
+      </Link>
     </main>
   );
 }
