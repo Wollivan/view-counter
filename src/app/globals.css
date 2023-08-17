@@ -81,5 +81,12 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8rem;
+  font-size: 16rem;
+}
+
+span {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  font-size: 1rem;
 }
