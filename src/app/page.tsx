@@ -11,7 +11,7 @@ export default async function Home() {
   // make the numbr get bigger for each view
   const myStyles = {
     p: {
-      fontSize: pageViews + "rem",
+      fontSize: pageViews / 4 + "px",
     },
   };
 
